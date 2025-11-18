@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vickie | Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Vickie</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#blogs">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider Navigation -->
+    <div class="slider-nav">
+        <div class="slider-dot active" data-section="home"></div>
+        <div class="slider-dot" data-section="about"></div>
+        <div class="slider-dot" data-section="skills"></div>
+        <div class="slider-dot" data-section="services"></div>
+        <div class="slider-dot" data-section="blogs"></div>
+        <div class="slider-dot" data-section="contact"></div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="vicky.jpg" alt="Vickie's profile">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Vickie</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span id="typewriter-text"></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">"As a passionate front end web developer, I specialize in transforming ideas into compelling solutions. With a blend of creativity and technical expertise, I strive to create impactful work that resonates with audiences. Each project is a chance to innovate and connect, and I invite you to explore my portfolio to see how I bring visions to life."</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/Vicky-Blessing/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/vicky_bles.sings/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/Vicky-Blessing/"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">
+                    <a href="#contact" class="btn primary">Contact Me</a>
+                    <a href="VICKIE'S CV.png" class="btn secondary">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                <img src="about.jpg" alt="About Vickie">
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                <h2>About <span>Me</span></h2>
+                <h3>Frontend Developer & UI/UX Designer</h3>
+                <p>I'm a passionate frontend developer with 5+ years of experience creating beautiful, functional websites and applications. My journey in web development began when I was studying Computer Science, and I've been hooked ever since.</p>
+                <p>When I'm not coding, you can find me creating design systems, contributing to open source projects, or teaching web development on my YouTube channel. I believe in continuous learning and staying updated with the latest technologies.</p>
+                <div class="about-info">
+                    <div class="info-box">
+                        <span>2+</span>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="info-box">
+                        <span>10+</span>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="info-box">
+                        <span>10+</span>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container">
+            <h2 data-aos="fade-down" data-aos-duration="1000">My <span>Skills</span></h2>
+            <div class="skills-content">
+                <div class="technical-skills" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level react"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Prompt Engineering</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level ui"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="professional-skills" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Professional Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Communication</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level communication"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Team Work</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level teamwork"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Project Management</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level project"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Creativity</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level creativity"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Problem Solving</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level problem"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-container">
+            <h2 data-aos="fade-down" data-aos-duration="1000">My <span>Services</span></h2>
+            <div class="services-content">
+                <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom website development using modern technologies like HTML5, CSS3, JavaScript to create responsive, user-friendly websites.</p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Prompt Engineering</h3>
+                    <p>Creating prompt systems that are reliable, scalable and alihned with your use case.</p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website looks and functions perfectly on all devices, from desktop to tablet to mobile.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="blogs">
+        <div class="blogs-container">
+            <h2 data-aos="fade-down" data-aos-duration="1000">My <span>Projects</span></h2>
+            <div class="blogs-content">
+                <div class="blog-box" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="blog-image">
+                        <img src="Res.PNG" alt="Resentment project">
+                    </div>
+                    
+                    <h3>Resentment</h3>
+                    <p>A clothing brand that stands as a collective of rebellious creatives who want their voices to be heard.</p>
+                    <a href="https://resentment.vercel.app/">View <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-box" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="blog-image">
+                        <img src="PLPCert.jpg" alt="Cert">
+                    </div>
+                    
+                    <h3>Power learn Project Certificate</h3>
+                    <p>Took a 16 week Software Engineering program at the Power Learn Project and was awarded a Certificate of achievement.</p>
+                    <a href="PLPCert.jpg">View <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Get In <span>Touch</span></h2>
+            <p class="contact-subtitle" data-aos="fade-up" data-aos-duration="1000">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>marthyvickyblessing@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>+254 703 128 254</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Nairobi, Kenya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/Vicky-Blessing"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vicky-blessings/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/vicky_bles.sings/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+                    <form id="myForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject">
+                            <label for="subject">Subject</label>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        
+                        <div class="form-group textarea-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span>Vickie</span>
+                    </div>
+                    <p>A passionate frontend developer and UI/UX designer dedicated to creating beautiful, functional websites and applications.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Vicky-Blessing"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vicky-blessings/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vicky_bles.sings/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#blogs"><i class="fas fa-chevron-right"></i> Blogs</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Prompt Engineering</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Responsive Design</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to my newsletter for the latest updates, tips, and exclusive content.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Vickie. All Rights Reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
